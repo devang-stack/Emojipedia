@@ -1,9 +1,12 @@
 :root {
-  --primary-color: #fcd34d;
+  --primary-color: #fdcd34;
 }
 
 .App {
   font-family: sans-serif;
   text-align: center;
-  background-color: var(--primary-color);
+}
+
+* {
+  background-color: #fdcd34;
 }

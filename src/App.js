@@ -54,26 +54,28 @@ export default function App() {
     setMeaning(meaning); // react call to show output
   }
   return (
-    <div className="App">
-      <h1>inside outt!</h1>
+    <p>
+      <div className="App">
+        <h1>inside outt!</h1>
 
-      <input onChange={emojiInputHandler} />
+        <input onChange={emojiInputHandler} />
 
-      <h2> {meaning} </h2>
-      {/* Actual output set by React using useState */}
+        <h2> {meaning} </h2>
+        {/* Actual output set by React using useState */}
 
-      <h3> emojis we know </h3>
-      {emojisWeKnow.map(function (emoji) {
-        return (
-          <span
-            onClick={() => emojiClickHandler(emoji)}
-            style={{ fontSize: "2rem", padding: "0.5rem", cursor: "pointer" }}
-            key={emoji}
-          >
-            {emoji}
-          </span>
-        );
-      })}
-    </div>
+        <h3> emojis we know </h3>
+        {emojisWeKnow.map(function (emoji) {
+          return (
+            <span
+              onClick={() => emojiClickHandler(emoji)}
+              style={{ fontSize: "2rem", padding: "0.5rem", cursor: "pointer" }}
+              key={emoji}
+            >
+              {emoji}
+            </span>
+          );
+        })}
+      </div>
+    </p>
   );
 }
